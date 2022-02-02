@@ -14,7 +14,7 @@
     <?php include __DIR__ . '/partials/header.php' ?>
     <!-- MAIN  -->
     <main id="app">
-    <div class="container-cards">
+    <div v-if="cards" class="container-cards">
         <div v-for="card in cards" class="cards">
             <div class="container-img">
                <img :src="card.poster" :alt="card.title">
@@ -24,9 +24,13 @@
             <h4>{{ card.year }}</h4>
         </div>
     </div>
+    <div v-else class="loading">
+      <img src="http://<?php echo $_SERVER['HTTP_HOST'] ?>/php-ajax-dischi/img/spotify-logo.png" alt="">
+      <h1>Caricamento in corso ...</h1>
+    </div>
     </main>
     <!-- FOOTER  -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
