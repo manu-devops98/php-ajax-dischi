@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER  */
+header {
+  background-color: #2d3a46;
+  display: flex;
+  height: 55px;
+}
+header .container-img {
+  width: 10%;
+}
+header .container-img img {
+  width: 35%;
+  padding: 0.5em;
+}
