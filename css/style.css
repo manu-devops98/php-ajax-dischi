@@ -17,3 +17,69 @@ header .container-img img {
   width: 35%;
   padding: 0.5em;
 }
+
+/* MAIN  */
+main {
+  background-color: #1d2c3b;
+  height: calc(100vh - 55px);
+}
+
+main .container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  padding: 4em;
+}
+
+main .container-cards .cards {
+  background-color: #2d3a46;
+  width: calc(100% / 5 - 20px);
+  text-align: center;
+  padding: 1em;
+  margin: 0 10px 10px 10px;
+}
+
+main .container-cards .cards .container-img {
+  width: 100%;
+}
+
+main .container-cards .cards .container-img img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+main .container-cards .cards h1 {
+  font-size: 1.2em;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+main .container-cards .cards h3 {
+  font-size: 1em;
+  color: #817d73;
+}
+
+main .container-cards .cards h4 {
+  font-size: 0.8em;
+  color: #817d73;
+}
+
+main .container-cards .loading {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+main .container-cards .loading img {
+  width: 30%;
+}
+
+main .container-cards .loading h1 {
+  color: white;
+  font-size: 2em;
+  margin-top: 2em;
+}
